@@ -8,5 +8,5 @@ A DYNAMIC WEBSITE USING NODEJS AS A BACKEND SERVER WHERE USER CAN BUY OUR PRODUC
 ![page8](https://user-images.githubusercontent.com/97621207/234348038-2feaecd1-f387-4c6e-a09c-1dfbc0840779.png)
 ![page4](https://user-images.githubusercontent.com/97621207/234348108-791d1c75-3323-4d70-9ac7-3e328af95ed5.png)
 ![page7](https://user-images.githubusercontent.com/97621207/234348189-a3104af4-721d-4b20-b69f-f65620e16bbd.png)
-[MiniProject_2_Synopsis.docx](https://github.com/Dhruv13g/GYM-MANAGEMENT/files/11325064/MiniProject_2_Synopsis.docx)
-[Projectreport_(Mini project 2)[1]final.pdf](https://github.com/Dhruv13g/GYM-MANAGEMENT/files/11325074/Projectreport_.Mini.project.2.1.final.pdf)
+SYNOPSIS ----> [MiniProject_2_Synopsis.docx](https://github.com/Dhruv13g/GYM-MANAGEMENT/files/11325064/MiniProject_2_Synopsis.docx)
+PROJECT REPORT ----> [Projectreport_(Mini project 2)[1]final.pdf](https://github.com/Dhruv13g/GYM-MANAGEMENT/files/11325074/Projectreport_.Mini.project.2.1.final.pdf)
