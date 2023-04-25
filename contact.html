@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+   
+    <title>Document</title>
+</head>
+<body>
+   <div class="menu">
+    <div class="container flex">
+        <div class="mobile-btn">
+            <ion-icon name="grid"></ion-icon>
+        </div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/depositphotos_84088450-stock-illustration-fitness-club-logo-removebg-preview.png" alt="logo">
+            </a>
+        </div>
+        <ul class="nav">
+            <li class="nav-item active"><a href="index.html">HOME</a></li>
+            <li class="nav-item active"><a href="contact.html">CONTACT US</a></li>
+            <li class="nav-item active"><a href="login.html">LOG IN</a></li>
+            
+        </ul>
+        <a href="signup.html" class="btn">Register</a>
+    </div>
+   </div>
+
+   <h1 style="text-align: center;">CONTACT US</h1>
+   <div class="container flex" id="discount">
+    <form action="/contactus" method="post" encoding="text/plain">
+     <h1>GET IN TOUCH</h1> 
+    <input type="text" placeholder="Name" required name="name">
+    <input type="email" placeholder="Email" required name="email">
+    <input type="text" placeholder="Subject"required name="sub">
+    <textarea id="message" rows="4" placeholder="How can we help you?" name="messg"></textarea>
+    <button id="btn">SEND</button>
+    </form>
+    <div>
+        <img src="images/st_small_845x845-pad_1000x1000_f8f8f8-removebg-preview.png" class="myimg" style="max-width:100%;height:auto;">  
+    </div>
+    </div>
+   
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="https://www.instagram.com/dhruvgupta1311/"><i class="icon ion-social-instagram"></i></a><a href="https://www.linkedin.com/in/dhruv-gupta-6a55311ba/"><i class="icon ion-social-linkedin"></i></a><a href="https://twitter.com/DhruvGu60290084"><i class="icon ion-social-twitter"></i></a><a href="https://www.facebook.com/profile.php?id=100052287649128"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">HOME</a></li>  
+                <li class="list-inline-item"><a href="contact.html">CONTACT</a></li>
+                
+                <li class="list-inline-item"><a href="login.html">LOGIN</a></li>
+            </ul>
+            <p class="copyright">Dhruv Gupta © 2023</p>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+  ></script>
+
+    <script src="app.js" ></script>
+
+</body>
+</html>
