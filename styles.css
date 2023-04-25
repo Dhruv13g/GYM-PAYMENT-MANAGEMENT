@@ -1,0 +1,562 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;700&display=swap");
+/* Base */
+:root {
+  --clr-primary: #29a396;
+}
+
+
+
+
+
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: radial-gradient(#111, #071a1a);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header,
+.section {
+  width: 100%;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.header::after,
+.header::before,
+.section::after,
+.section::before {
+  content: "";
+  background: url(../img/blur-1.png);
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 0;
+}
+
+.header::after {
+  left: -200px;
+}
+
+.header::before {
+  right: -200px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mb {
+  margin-bottom: 30px;
+}
+
+.mt {
+  margin-top: 20px;
+}
+
+.section {
+  background: #1d1f1e;
+  position: relative;
+  padding: 80px 0;
+}
+
+.section::after {
+  left: -200px;
+}
+
+.section::before {
+  width: 600px;
+  right: -200px;
+}
+
+.section:nth-child(even) {
+  background: #141615;
+}
+
+.section:nth-child(even)::after,
+.section:nth-child(even)::before {
+  display: none;
+}
+
+.section:nth-child(even) .text {
+  margin-left: 30px;
+}
+
+.primary {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.secondary {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.tertiary {
+  font-size: 15px;
+}
+
+/* Menu */
+.menu {
+  width: 100%;
+  background: linear-gradient(to right, #0e0e0e 70%, #142d2a);
+  padding: 12px 0;
+}
+
+.menu .container {
+  justify-content: space-between;
+}
+
+.mobile-btn {
+  display: none;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
+}
+
+.nav {
+  list-style: none;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.nav-item:hover a {
+  color: #29a396;
+  transition: 0.3s linear;
+}
+
+.nav-item:last-of-type {
+  margin-right: 0;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* End Menu */
+
+/* Buttons */
+.btn {
+  padding: 10px 28px;
+  background: var(--clr-primary);
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #165f56;
+  transition: 0.3s linear;
+}
+
+.btn-2 {
+  font-size: 35px;
+  text-decoration: none;
+  color: #ccc;
+  transition: 0.3s linear;
+}
+
+.btn-2:hover {
+  color: #29a396;
+}
+
+/* End Buttons */
+
+/* Header */
+.text {
+  width: 60%;
+}
+
+.visual {
+  width: 40%;
+}
+
+.visual img {
+  width: 100%;
+}
+
+.header h1 {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.header h1 span {
+  color: #29a396;
+}
+/* End Header */
+
+/* Trainers */
+#trainers {
+  text-align: center;
+}
+
+.trainer img {
+    width: 65%;
+   
+  border-top-left-radius: 80px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 8px;
+  margin-bottom: 10px;
+  outline: 2px solid #fff;
+  padding: 14px;
+}
+
+.trainer .mb {
+  margin-bottom: 10px;
+}
+
+/* End Trainers */
+
+/* Testimonial */
+
+#testimonial .visual img {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+}
+
+.client {
+  background: #fff;
+  color: #000;
+  padding: 20px 10px;
+  margin-right: 20px;
+  text-align: center;
+  border-radius: 20px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.client img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: -40px;
+  left: calc(50% - 40px);
+}
+
+.client h2 {
+  margin: 20px 0 10px 0;
+}
+/* End Testimonial */
+
+/* Discount */
+#discount {
+  padding: 40px 0;
+}
+/* End Discount */
+
+/* Footer */
+.footer {
+  padding: 30px 0;
+  border-top: 1px solid #fff;
+  text-align: center;
+}
+/* End Footer */
+
+/* Responsive */
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mobile-btn {
+    display: block;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+  }
+
+  .menu.active .nav-item {
+    display: block;
+    margin: 30px 0;
+  }
+
+  .nav,
+  .menu .btn {
+    display: none;
+  }
+
+  .menu.active .nav,
+  .menu.active .btn {
+    display: block;
+  }
+
+  .menu.active {
+    padding: 30px 0;
+    width: 100%;
+    transition: all 0.8s ease;
+  }
+
+  .text,
+  .visual {
+    width: 100%;
+  }
+
+  .text h1 {
+    font-size: 45px;
+  }
+
+  .primary {
+    font-size: 28px;
+  }
+
+  .secondary {
+    font-size: 22px;
+  }
+
+  .tertiary {
+    font-size: 14px;
+  }
+
+  .trainer {
+    margin-bottom: 20px;
+  }
+
+  
+
+  #discount .visual img {
+    width: 70%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 530px) {
+  .header::after,
+  .header::before,
+  .section::after,
+  .section::before {
+    display: none;
+  }
+
+  .primary {
+    font-size: 25px;
+  }
+
+  .secondary {
+    font-size: 20px;
+  }
+
+  .tertiary {
+    font-size: 12px;
+  }
+
+  .text h1 {
+    font-size: 34px;
+  }
+
+  .btn,
+  .btn-2 {
+    font-size: 16px;
+  }
+}
+
+
+
+.heading
+{
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+}
+#discount
+{
+    margin-top: -98px;
+}
+form{
+    background : #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+form h3{
+    
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 2Øpx;
+}
+form input,form textarea{
+    border:0;
+    margin :10px 0;
+    padding:20px;
+    outline:none;
+    background :#f5f5f5 ;
+    font-size: 16px;
+}
+form button{
+        padding: 15px;
+        background:rgb(239, 55, 55);
+        color:#fff;
+        font-size: 18px;
+        outline: none;
+        cursor: pointer;
+        width:150px;
+        border: solid;
+        margin:20px auto 0;
+        border-radius:100px;
+}
+.link
+{
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: blue;
+}
+
+.terms
+{
+    text-decoration: none;
+    color: blue;
+}
+.list-inline{
+    text-decoration: none;
+    color: aqua;
+}
+.list-inline-item
+{
+    word-spacing: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: aqua;
+    display: inline-block;
+    justify-content: center;
+}
+
+
+
+
+    .footer-basic {
+        padding:40px 0;
+        background-color:black;
+        color:aqua;
+      }
+      
+      .footer-basic ul {
+        padding:0;
+        list-style:none;
+        text-align:center;
+        font-size:18px;
+        line-height:1.6;
+        margin-bottom:0;
+      }
+      
+      .footer-basic li {
+        padding:0 10px;
+      }
+      
+      .footer-basic ul a {
+        color:inherit;
+        text-decoration:none;
+        opacity:0.8;
+      }
+      
+      .footer-basic ul a:hover {
+        opacity:1;
+      }
+      
+      .footer-basic .social {
+        text-align:center;
+        padding-bottom:25px;
+      }
+      
+      .footer-basic .social > a {
+        font-size:24px;
+        width:40px;
+        height:40px;
+        line-height:40px;
+        display:inline-block;
+        text-align:center;
+        border-radius:50%;
+        border:1px solid aqua;
+        margin:0 8px;
+        color:inherit;
+        opacity:0.75;
+      }
+      
+      
+      
+      .footer-basic .copyright {
+        margin-top:15px;
+        text-align:center;
+        font-size:13px;
+        margin-bottom:0;
+        color: #f5f5f5;
+      }
+img .myimage{
+      opacity: 0;
+      animation: zoomIn 1s ease forwards , floatImage 4s ease-in-out infinite;
+      animation-delay: 2s,3s;
+}
+  .wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    padding: 15px;
+    width: 50%;
+    background: black;
+    border-radius: 5px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+input{
+    outline: none;
+    border: none;
+    padding: 5px;
+}
+button{
+    color: white;
+    padding: 10px;
+    border: 2px solid white;
+    background: black;
+    display: block;
+    margin-top: 10%;
+    cursor: pointer;
+}
