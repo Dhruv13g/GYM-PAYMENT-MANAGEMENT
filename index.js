@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({
 
 
 
-mongoose.connect('mongodb://127.0.0.1:27017/Fitness');
+mongoose.connect('mongodb+srv://dhruv:85330@gym-payment.iwjf5qm.mongodb.net/');
 var db=mongoose.connection;
 db.on('error', console.log.bind(console, "connection error"));
 db.once('open', function(callback){
